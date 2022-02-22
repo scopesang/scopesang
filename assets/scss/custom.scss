@@ -1,0 +1,261 @@
+/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+// 设置选中字体的区域背景颜色
+::selection {
+    background: #dae3ea;
+    color: #34495e;
+  }
+  
+  ::-moz-selection {
+    background: #dae3ea;
+    color: #34495e;
+  }
+  
+  ::-webkit-selection {
+    background: #dae3ea;
+    color: #34495e;
+  }
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+
+    &:hover {
+        color: var(--accent-color-darker);
+    }
+
+    &.link {
+        color: #4288b9ad;
+        font-weight: 600;
+        padding: 0 2px;
+        text-decoration: none;
+        cursor: pointer;
+        
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+// 页面配色样式####################################################################
+:root {
+    // 右边栏菜单字体大小
+    .section-title {
+        font-size: 1.8rem;
+    }
+    // 菜单字体大小
+    .menu {
+        font-size: 1.9rem;
+    }
+    // 文章内容图片圆角阴影
+    .article-page .main-article .article-content {
+        img {
+            max-width: 92% !important;
+            height: auto !important;
+            box-shadow: 0 0px 10px 2px #636b904d;
+            border-radius: 8px;
+        }
+    }
+    // 文章内容引用块左边样式
+    .article-content {
+        blockquote {
+            border-left: 6px solid #1bcdfc !important;
+            border-radius: 6px;
+        }
+    }
+    // 字体颜色
+    --card-text-color-main: #34495e;
+    // 行内代码背景色
+    --code-background-color: #e7fffccf;
+    // 行内代码前景色
+    --code-text-color: #1f2d55cf;
+    // 默认模式下引用块背景样式
+    --blockquote-background-color: #b9ebea4d;
+    // 全局字体大小
+    --article-font-size: 2.0rem;
+    // 表格配色样式
+    --tr-even-background-color: #eff0fa54 !important;
+    &[data-scheme="dark"] {
+        //    暗黑模式下引用块背景样式
+        --blockquote-background-color: #313f5645;
+        // 整页背景配色
+        --body-background: #000;
+        // 卡片配色
+        --card-background: #191d24;
+        // 表格配色样式
+        --tr-even-background-color: #1e242ecf !important;
+        // 文章内容引用块左边样式
+        .article-content {
+            blockquote {
+                border-left: 6px solid #33619b8c !important;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// 友链样式 ###############################################################################
+// 头像边框颜色
+$avatar-border-color: #566a82;
+$avatar-border-color-dark: #C0C0C0;
+
+// style-card 背景色
+$friend-link-background-color: #51a8ca10;
+$friend-link-background-color-dark: #69697141;
+
+// 友链 name 原始色
+$friend-link-color: #11a1a2;
+$friend-link-color-dark: #ffffff;
+
+// 友链 name 气泡响应对比色
+$friend-link-hover-color: #ea4e2f;
+$friend-link-hover-color-dark: rgb(241, 213, 159);
+
+// bio 简介上下文
+$context-color: #404040;
+$context-color-dark: #c0c0c0;
+
+// 友链头像及头像边框的样式
+.friend-avatar {
+    width: 56px;
+    height: 56px;
+    padding: 2px;
+    margin-top: 14px;
+    margin-left: 14px;
+    border-radius: 15px;
+    border: 3.6px inset $avatar-border-color;
+
+    [data-scheme=dark] & {
+        border: 3.6px inset $avatar-border-color-dark;
+    }
+}
+
+.friend-link-div {
+    // 实现卡片双栏排列效果
+    height: auto;
+    margin-top: auto;
+    margin-inline-start: 4.5%;
+    width: 43%;
+    display: inline-block !important;
+
+    // 控制上下连续排列的卡片之间的行距
+    margin-bottom: 11px;
+
+    // 卡片圆角
+    border-radius: 7px 7px 7px 7px;
+
+    // 卡片阴影
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(231, 224, 224, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0.7px 1px 6px 0px rgba(0, 0, 0, 0.16);
+
+    // 卡片背景色
+    background: $friend-link-background-color;
+
+    [data-scheme=dark] & {
+        background: $friend-link-background-color-dark;
+    }
+
+    // 卡牌气泡响应动画
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.15s ease;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+
+.friend-link-avatar {
+    width: 92px;
+    float: left;
+    margin-right: 2px;
+
+}
+
+// name 特效样式， hover 气泡效果,友链 name 变色
+.friend-link-info {
+    margin-top: 13px;
+    margin-right: 18px;
+    color: $friend-link-color;
+
+    [data-scheme=dark] & {
+        color: $friend-link-color-dark;
+    }
+
+    &:hover {
+        color: $friend-link-hover-color;
+
+        [data-scheme=dark] & {
+            color: $friend-link-hover-color-dark;
+        }
+    }
+}
+
+// name 文字样式
+.friend-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-style: normal;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 16px;
+
+}
+
+// bio 文字样式
+.friend-bio {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: auto;
+
+    // font: 12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 14px;
+
+    color: $context-color;
+
+    [data-scheme=dark] & {
+        color: $context-color-dark;
+    }
+
+}
+
+// 响应式页面，允许根据不同的尺寸调整样式
+@media screen and (max-width: 720px) {
+    .friend-link-div {
+        width: 92%;
+        margin-right: auto;
+    }
+
+    .friend-bio {
+        margin: auto;
+        align-content: center;
+        justify-content: left;
+    }
+
+    .friend-link-avatar {
+        width: 84px;
+        margin: auto;
+    }
+
+    // .friend-link-info {
+    //     height: 100%;
+    //     margin: auto;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: left;
+    // }
+
+    .friend-name {
+        font-size: 14px;
+        font-style: normal;
+        font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    }
+}
+//############################################################################

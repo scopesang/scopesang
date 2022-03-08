@@ -21,7 +21,7 @@ jobs:
           extended: true #不需要extended版本就可以注释
 
       - name: Build
-        run: hugo --minify
+        run: hugo --theme=hugo-theme-stack --minify
 
       - name: Deploypage
         uses: peaceiris/actions-gh-pages@v3

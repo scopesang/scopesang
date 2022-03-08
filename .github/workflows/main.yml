@@ -27,7 +27,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          external_repository: scopesang/scopesang.github.io
+          external_repository: scopesang.github.io/scopesang/
           publish_branch: gh-pages  # default: gh-pages
           publish_dir: ./public/
 

@@ -27,7 +27,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          external_repository: JohntunLiu/JohntunLiu.github.io
+          external_repository: scopesang/scopesang.github.io
           publish_branch: gh-pages  # default: gh-pages
           publish_dir: ./public
 
@@ -50,7 +50,7 @@ jobs:
         # 来源仓库    git@github.com:JohntunLiu/myblog.git
         source-repo: "git@github.com:scopesang/scopesang.git"
         # 目标仓库 git@gitee.com:scopesang/scopesang.git
-        destination-repo: "git@gitee.com:scopesang/scopesang.git"
+        destination-repo: "git@gitee.com:/scopesang.git"
 
   reload-pages:
     needs: sync

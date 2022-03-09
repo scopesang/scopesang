@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on 啊P在家吗</title>
+    <link>https://scopesang.github.io/scopesang/categories/blog/</link>
+    <description>Recent content in blog on 啊P在家吗</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Feb 2022 12:52:25 +0800</lastBuildDate><atom:link href="https://scopesang.github.io/scopesang/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo博客搭建教程！(一)</title>
+      <link>https://scopesang.github.io/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/</link>
+      <pubDate>Sun, 20 Feb 2022 12:52:25 +0800</pubDate>
+      
+      <guid>https://scopesang.github.io/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/</guid>
+      <description>windows安装choco 使用window打开powershell，在终端输入安装指令即可 1  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))   choco &amp;ndash;version 查看版本 </description>
+    </item>
+    
+  </channel>
+</rss>

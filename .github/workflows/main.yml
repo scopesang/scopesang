@@ -1,0 +1,46 @@
+name: blog to gitee
+
+on:
+  push:
+    branches:
+      - main    # master 分支 push 的时候触发
+
+jobs:
+ build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.81.0'
+          extended: true #不需要extended版本就可以注释
+
+      - name: Build 
+        run: hugo --theme=hugo-theme-stack --baseUrl="https://scopesang.github.io/scopesang/" --buildDrafts
+        
+      - name: Deploy  blog
+        env: 
+          # Gitee 仓库
+          GITEE_REPO: gitee.com/scopesang/scopesang.gitee.io
+          GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
+        # 将编译后的博客文件推送到指定仓库
+        run: |
+          cd ./public && git init && git add .
+          git config user.name "scopesang"
+          git config user.email "1176486954@qq.com"
+          git add .
+          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+          git remote add origin https://scopesang:x782223712@gitee.com/scopesang/scopesang.git
+          git push -u origin "master" -f 
+          
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.personal_token }} # personal_token 这里新建一个 https://github.com/settings/tokens
+          PUBLISH_BRANCH: gh-pages  # 推送到当前 gh-pages 分支
+          PUBLISH_DIR: ./public  # hugo 生成到 public 作为跟目录
+          commit_message: ${{ github.event.head_commit.message }}
+
+

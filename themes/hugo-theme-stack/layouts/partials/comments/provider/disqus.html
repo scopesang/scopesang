@@ -1,0 +1,23 @@
+<div class="disqus-container">
+    一个人,特别想成为一个什么,但始终没成为一个什么,那么这个什么也就成了他一辈子第一魂牵梦萦的什么。
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        color: var(--card-text-color-tertiary);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>

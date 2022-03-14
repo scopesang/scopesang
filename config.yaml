@@ -1,7 +1,6 @@
 baseurl: https://example.com
 languageCode: en-us
 theme: hugo-theme-stack
-themesDir : "./themes/"
 paginate: 5
 title: 啊P在家吗
 

@@ -18,7 +18,7 @@ jobs:
           extended: true #不需要extended版本就可以注释
 
       - name: Build 
-        run: hugo --theme=hugo-theme-stack --baseUrl="https://scopesang.github.io/scopesang/" --buildDrafts
+        run: hugo --theme=hugo-theme-stack --baseUrl="https://scopesang.github.io/" --buildDrafts
         
       - name: Deploy  blog
         env: 

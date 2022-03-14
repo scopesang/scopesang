@@ -6,44 +6,30 @@
         <description>Recent content on 啊P在家吗</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 20 Feb 2022 12:52:25 +0800</lastBuildDate><atom:link href="https://scopesang.github.io/scopesang/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>hugo博客搭建教程！(一)</title>
-        <link>https://scopesang.github.io/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/</link>
-        <pubDate>Sun, 20 Feb 2022 12:52:25 +0800</pubDate>
+        <lastBuildDate>Sat, 12 Mar 2022 14:13:38 +0800</lastBuildDate><atom:link href="https://scopesang.github.io/scopesang/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>hugo &#43; Github Actions&#43; Gitee Pages 博客搭建</title>
+        <link>https://scopesang.github.io/scopesang/p/hugo-github-actions-gitee-pages-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Sat, 12 Mar 2022 14:13:38 +0800</pubDate>
         
-        <guid>https://scopesang.github.io/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/</guid>
-        <description>&lt;img src="https://scopesang.github.io/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/chocolatey-releases.jpg" alt="Featured image of post hugo博客搭建教程！(一)" /&gt;&lt;h2 id=&#34;windows安装choco&#34;&gt;windows安装choco&lt;/h2&gt;
-&lt;h3 id=&#34;使用window打开powershell在终端输入安装指令即可&#34;&gt;使用window打开powershell，在终端输入安装指令即可&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;choco----version-查看版本&#34;&gt;choco  &amp;ndash;version 查看版本&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://scopesang.github.io/scopesang/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/20210427205338192.png&#34;
-	width=&#34;1085&#34;
-	height=&#34;375&#34;
-	srcset=&#34;https://scopesang.github.io/scopesang/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/20210427205338192_hu530566525f75aa94bed4119de729fed3_98015_480x0_resize_box_2.png 480w, https://scopesang.github.io/scopesang/scopesang/p/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E4%B8%80/20210427205338192_hu530566525f75aa94bed4119de729fed3_98015_1024x0_resize_box_2.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;289&#34;
-		data-flex-basis=&#34;694px&#34;
-	
-&gt;&lt;/p&gt;
+        <guid>https://scopesang.github.io/scopesang/p/hugo-github-actions-gitee-pages-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;h2 id=&#34;什么是hugo&#34;&gt;什么是hugo&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;hugo&lt;/strong&gt; 是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。对比Hexo，&lt;strong&gt;hugo&lt;/strong&gt; 仅需一个二进制文件（&lt;strong&gt;hugo&lt;/strong&gt; .exe）即可实现网站生成的生成。而且就如它官网介绍：The world’s fastest framework for building websites。&lt;strong&gt;hugo&lt;/strong&gt; 是目前最快的网站构建框架。凭借其惊人的速度和灵活性，解决了环境依赖、性能较差的问题，还有使用简单、部署方便等诸多优点，通过 LiveReload 实时刷新，极大的优化文章的写作体验。&lt;strong&gt;hugo&lt;/strong&gt; 使建站再次变得有趣。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;什么是hugo-1&#34;&gt;什么是hugo&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;hugo&lt;/strong&gt; 是静态网站生成器，能够作为一些展示类网站的解决方案。比如个人博客、产品介绍、个人作品展示、文档介绍、公司官网等等。再加上Github Pages的功能，就能不花一分钱建一个自己的网站了。
+that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>Chinese Test</title>
         <link>https://scopesang.github.io/scopesang/p/test-chinese/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
         
         <guid>https://scopesang.github.io/scopesang/p/test-chinese/</guid>
-        <description>&lt;img src="https://scopesang.github.io/scopesang/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
+        <description>&lt;img src="https://scopesang.github.io/scopesang/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
 &lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
 &lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
@@ -125,6 +111,14 @@
 &lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Typlog&lt;/a&gt;&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://scopesang.github.io/scopesang/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://scopesang.github.io/scopesang/archives/</guid>
+        <description></description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
@@ -357,22 +351,6 @@ rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
 &lt;/section&gt;</description>
         </item>
         <item>
-        <title>Rich Content</title>
-        <link>https://scopesang.github.io/scopesang/p/rich-content/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://scopesang.github.io/scopesang/p/rich-content/</guid>
-        <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode&lt;/h2&gt;
-&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode&lt;/h2&gt;
-&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode&lt;/h2&gt;
-&lt;h2 id=&#34;bilibilibi-shortcode&#34;&gt;bilibilibi Shortcode&lt;/h2&gt;
-&lt;h2 id=&#34;gist-shortcode&#34;&gt;Gist Shortcode&lt;/h2&gt;</description>
-        </item>
-        <item>
         <title>Placeholder Text</title>
         <link>https://scopesang.github.io/scopesang/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
@@ -473,6 +451,101 @@ $$&lt;/p&gt;</description>
 }&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>https://scopesang.github.io/scopesang/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://scopesang.github.io/scopesang/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;h2 id=&#34;my-desktop&#34;&gt;🎅My Desktop&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://scopesang.github.io/scopesang/scopesang/%E5%85%B3%E4%BA%8E/Snipaste_2022-03-11_00-19-12.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1025&#34;
+	srcset=&#34;https://scopesang.github.io/scopesang/scopesang/%E5%85%B3%E4%BA%8E/Snipaste_2022-03-11_00-19-12_hu1036968761038620caeebc9617e3c630_1340577_480x0_resize_box_2.png 480w, https://scopesang.github.io/scopesang/scopesang/%E5%85%B3%E4%BA%8E/Snipaste_2022-03-11_00-19-12_hu1036968761038620caeebc9617e3c630_1340577_1024x0_resize_box_2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;专业团队&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;449px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title>友链</title>
+        <link>https://scopesang.github.io/scopesang/%E5%8F%8B%E9%93%BE/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://scopesang.github.io/scopesang/%E5%8F%8B%E9%93%BE/</guid>
+        <description>&lt;div style=&#34;margin-inline-start: 4.5%;&#34;&gt;
+    &lt;img src=&#34;daily_pic.gif&#34; alt=&#34;&#34;&gt;
+&lt;/div&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;--following----&#34;&gt;『  Following    🧙‍♂️&lt;/h3&gt;
+&lt;a href=&#34;https://blog.zhheo.com/&#34; title=&#34;Heo&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://blog.zhheo.com/img/avatar.png class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;Heo&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;👻爱折腾的设计师&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://www.nashome.cn/&#34; title=&#34;zhaoqiang&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://gitee.com/scopesang/pic/raw/master/202203110012026.png class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;zhaoqiang&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;zhaoqiang&amp;#39;s blog&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://www.hojun.cn/2019/04/13/cknemlo5t007iuwtusph89t0w/&#34; title=&#34;hojun&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;hojun&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;一个好奇的人&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://www.recoluan.com/&#34; title=&#34;recoluan&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://www.recoluan.com/head.png class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;recoluan&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;午后南杂&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://scopesang.github.io/scopesang/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://scopesang.github.io/scopesang/search/</guid>
+        <description></description>
         </item>
         
     </channel>
